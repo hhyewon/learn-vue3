@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div id="child-id" class="child-class" style="border: 1px solid black">
 		<!-- 
 					modelValue
 					update:modelValue
@@ -7,12 +7,12 @@
 		<label>
 			{{ label }}
 			<!-- <input v-model="name" type="text" /> -->
-			<input
-				type="text"
-				:value="modelValue"
-				@input="e => $emit('update:modelValue', e.target.value)"
-			/>
 		</label>
+		<input
+			type="text"
+			:value="modelValue"
+			@input="e => $emit('update:modelValue', e.target.value)"
+		/>
 	</div>
 </template>
 
