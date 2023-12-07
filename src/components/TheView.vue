@@ -1,19 +1,11 @@
 <template>
 	<main>
-		<LifecycleHooks></LifecycleHooks>
+		<ScriptSetup></ScriptSetup>
 	</main>
 </template>
 
-<script>
-import LifecycleHooks from './LifecycleHooks.vue';
-export default {
-	components: {
-		LifecycleHooks,
-	},
-	setup() {
-		return {};
-	},
-};
+<script setup>
+import ScriptSetup from './ScriptSetup.vue';
 </script>
 
 <style lang="scss" scoped></style>

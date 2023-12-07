@@ -1,0 +1,18 @@
+<template>
+	<div>{{ $parent }}</div>
+</template>
+
+<script>
+import { ref } from 'vue';
+export default {
+	setup() {
+		const message = ref('Hello');
+		const sayHello = () => {
+			alert(message.value);
+		};
+		return { message, sayHello };
+	},
+};
+</script>
+
+<style lang="scss" scoped></style>
